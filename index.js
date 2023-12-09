@@ -21,7 +21,6 @@ app.get('/',(req,res)=>{
 
 app.get('/api/data',async(req,res)=>{
       const stocks = await Stocks.find(); 
-      console.log(stocks);
       res.json(stocks);
 })
 
